@@ -201,6 +201,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   spring
   spring-watcher-listen (~> 2.0.0)
+  sprockets (~> 4.0)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)

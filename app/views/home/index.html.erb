@@ -1,0 +1,6 @@
+<% provide(:title, "Home") %>
+<% if current_user %>
+    <p>user <%= "#{current_user.email}" %> loggedin</p>
+<% else %>
+    <p>logged out</p>
+<% end %>

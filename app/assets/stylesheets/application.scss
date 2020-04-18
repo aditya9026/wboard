@@ -20,9 +20,13 @@
 @import '@fortawesome/fontawesome-free/scss/brands';
 @import 'bootstrap/scss/bootstrap';
 
+:root {
+   --x-gray: #868686;
+   --x-black: black;
+}
 
 .solid-primary {
-   background-color: black;
+   background-color: var(--x-black);
 }
 .navbar-brand {
    color: #ffffff !important;
@@ -30,7 +34,7 @@
 #banner {
    background: url(banner.jpg) no-repeat;
    background-size: cover;
-   min-height: 570px;
+   min-height: 600px;
 }
 .jumbotron {
    background: transparent;
@@ -52,7 +56,9 @@
    }
 }
 #mid-banner-text {
-   background: #868686;
+   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+   border-radius: 5px;
+   background: var(--x-gray);
    color: #ffffff;
    text-align: center;
    padding: 1.5rem;
@@ -60,44 +66,26 @@
 #services {
    padding: 60px;
 }
-
 #contact {
-   background: #fafafa;
    padding-top: 70px;
    padding-bottom: 80px;
+   color: #ffffff;
+   background: var(--x-black);
 }
-.sub-footer form {
-   margin-top: 60px;
-   margin-bottom: 30px;
-}
-.form-inline .form-group {
-    display: inline-block;
-    /* margin-bottom: 0; */
-    /* vertical-align: middle; */
+.card {
+   margin: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.2s;
+   border-radius: 5px;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-.btn {
-   display: inline-block;
-   padding: 10px 20px;
-   margin-bottom: 0;
-   font-size: 16px;
-   font-weight: normal;
-   line-height: 1.42857143;
-   text-align: center;
-   white-space: nowrap;
-   vertical-align: middle;
-   -ms-touch-action: manipulation;
-   touch-action: manipulation;
-   cursor: pointer;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-   background-image: none;
-   border: 1px solid transparent;
-   border-radius: 4px;
-   background-color: #0BA9F9;
+#copyright {
+   // background: var(--x-gray);
+   color: #ffffff;
+}
+.text-center {
+   text-align: center !important;
 }

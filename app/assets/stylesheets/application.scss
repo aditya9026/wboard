@@ -20,7 +20,84 @@
 @import '@fortawesome/fontawesome-free/scss/brands';
 @import 'bootstrap/scss/bootstrap';
 
-.bg-primary {
-   background-color: gray;
-   text: black; 
+
+.solid-primary {
+   background-color: black;
+}
+.navbar-brand {
+   color: #ffffff !important;
+} 
+#banner {
+   background: url(banner.jpg) no-repeat;
+   background-size: cover;
+   min-height: 570px;
+}
+.jumbotron {
+   background: transparent;
+   h1.small {
+      line-height: 88px;
+      border-width: 0px;
+      margin: 75px;
+      padding: 0px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 62px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: #24282d;
+      -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+      -moz-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+      -ms-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+      filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+   }
+}
+#mid-banner-text {
+   background: #868686;
+   color: #ffffff;
+   text-align: center;
+   padding: 1.5rem;
+}
+#services {
+   padding: 60px;
+}
+
+#contact {
+   background: #fafafa;
+   padding-top: 70px;
+   padding-bottom: 80px;
+}
+.sub-footer form {
+   margin-top: 60px;
+   margin-bottom: 30px;
+}
+.form-inline .form-group {
+    display: inline-block;
+    /* margin-bottom: 0; */
+    /* vertical-align: middle; */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.btn {
+   display: inline-block;
+   padding: 10px 20px;
+   margin-bottom: 0;
+   font-size: 16px;
+   font-weight: normal;
+   line-height: 1.42857143;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   -ms-touch-action: manipulation;
+   touch-action: manipulation;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 4px;
+   background-color: #0BA9F9;
 }

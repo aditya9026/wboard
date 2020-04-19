@@ -23,32 +23,59 @@
 :root {
    --x-gray: #868686;
    --x-black: black;
+   --dgray: #363636;
 }
 
-.solid-primary {
-   background-color: var(--x-black);
+.active {
+   background-color: #24222226;
+   a {
+      color: var(--x-black) !important;
+   }
+      
 }
-.navbar-brand {
+.navbar-brand, .nav-link {
+   color: #ffffff !important;
+}
+#banner:before {
+   content: "";
+   background: rgba(1, 1, 1, 0.6);
+   position: absolute;
+   bottom: 0;
+   top: 0;
+   left: 0;
+   right: 0;
    color: #ffffff !important;
 } 
 #banner {
-   background: url(banner.jpg) no-repeat;
+   background: url(hero-bg.jpg) no-repeat;
+   width: 100%;
+   height: 80vh;
    background-size: cover;
-   min-height: 600px;
+   position: relative;
 }
+
 .jumbotron {
    background: transparent;
-   h1.small {
+   h1.large-letter {
+      text-align: center;
       line-height: 88px;
       border-width: 0px;
-      margin: 75px;
-      padding: 0px;
+      margin: 120px 10px 10px 10px;
       font-family: 'Open Sans', sans-serif;
-      font-size: 62px;
+      font-size: 70px;
       letter-spacing: 6px;
       text-transform: uppercase;
       font-weight: 400;
-      color: #24282d;
+      color: #ffffff;
+      -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+      -moz-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+      -ms-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+      filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+   }
+   .small {
+      text-align: center;
+      color: #ffffff;
+      color: #ffffff;
       -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
       -moz-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
       -ms-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
@@ -70,7 +97,7 @@
    padding-top: 70px;
    padding-bottom: 80px;
    color: #ffffff;
-   background: var(--x-black);
+   background: var(--dgray);
 }
 .card {
    margin: 20px;

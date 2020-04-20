@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'home/help'
   get 'home/about'
+
+  resources :blogs
  
   root 'home#index'
 end

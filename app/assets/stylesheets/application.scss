@@ -26,6 +26,11 @@
    --dgray: #363636;
 }
 
+.maring-lr {
+   margin-left: 25px;
+   margin-right: 25px;
+}
+
 .active {
    background-color: #24222226;
    a {
@@ -35,6 +40,10 @@
 }
 .navbar-brand, .nav-link {
    color: #ffffff !important;
+}
+.nav-link {
+   margin-left: 5px;
+   margin-right: 5px;     
 }
 #banner:before {
    content: "";

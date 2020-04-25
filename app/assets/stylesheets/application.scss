@@ -32,11 +32,15 @@
 }
 
 .active {
-   background-color: #24222226;
    a {
-      color: var(--x-black) !important;
-   }
-      
+      color: var(--x-black) !important;         
+   }     
+}
+#hub-nav-top{
+   background-color: #000000c4;
+   a, a:link, a:visited {
+      text-decoration: none;
+  }
 }
 .navbar-brand, .nav-link {
    color: #ffffff !important;
@@ -61,6 +65,7 @@
    height: 80vh;
    background-size: cover;
    position: relative;
+   background-attachment: fixed;
 }
 
 .jumbotron {
@@ -124,4 +129,14 @@
 }
 .text-center {
    text-align: center !important;
+}
+
+#outer-box {
+   margin: 120px;
+   .card-img-top {
+      width:100%;
+      height:200px;
+      background-repeat:no-repeat;
+      background-size:cover;
+   }
 }

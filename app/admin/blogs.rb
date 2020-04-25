@@ -17,6 +17,6 @@ ActiveAdmin.register Blog do
   
   active_admin_import  validate: false,
     csv_options: {col_sep: ";" },
-    before_import: ->(importer){ p '=================' },
+    before_import: ->(importer){ p '================= before import' },
     batch_size: 1000
 end

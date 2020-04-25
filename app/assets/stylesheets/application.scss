@@ -72,10 +72,10 @@
    background: transparent;
    h1.large-letter {
       text-align: center;
-      line-height: 88px;
       border-width: 0px;
-      margin: 120px 10px 10px 10px;
       font-family: 'Open Sans', sans-serif;
+      margin: 150px 10px 10px 10px;
+      line-height: 88px;
       font-size: 70px;
       letter-spacing: 6px;
       text-transform: uppercase;
@@ -124,7 +124,6 @@
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 #copyright {
-   // background: var(--x-gray);
    color: #ffffff;
 }
 .text-center {
@@ -138,5 +137,58 @@
       height:200px;
       background-repeat:no-repeat;
       background-size:cover;
+   }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+   .jumbotron {
+      h1.large-letter {
+         margin: 150px 10px 10px 10px;
+         font-size: 3.5rem;
+         line-height: 50px;
+         // color: violet;
+      }
+   }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+   #banner {
+      height: 50vh;
+   }
+   .jumbotron {
+      h1.large-letter {
+         // color: red;
+         margin: 200px 10px 10px 10px;
+         font-size: 4rem;
+      }
+   }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+   #banner {
+      height: 70vh;
+   }
+   .jumbotron {
+      h1.large-letter {
+         // color: yellow;
+         font-size: 60px;
+      }
+   }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   #banner {
+      height: 80vh;
+   }
+   .jumbotron {
+      h1.large-letter {
+         font-size: 70px;
+         margin: 250px 10px 10px 10px;
+         // color: blue;
+      }
    }
 }

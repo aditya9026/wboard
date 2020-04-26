@@ -150,6 +150,11 @@
          // color: violet;
       }
    }
+   #outer-box {
+      .card-img-top {
+         height:400px;
+      }
+   }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -162,6 +167,14 @@
          // color: red;
          margin: 200px 10px 10px 10px;
          font-size: 4rem;
+      }
+   }
+   #outer-box {
+      .card-img-top {
+         height:400px;
+      }
+      .card {
+         cursor: pointer;
       }
    }
 }
@@ -177,6 +190,11 @@
          font-size: 60px;
       }
    }
+   #outer-box {
+      .card-img-top {
+         height:200px;
+      }
+   }
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
@@ -189,6 +207,11 @@
          font-size: 70px;
          margin: 250px 10px 10px 10px;
          // color: blue;
+      }
+   }
+   #outer-box {
+      .card-img-top {
+         height:200px;
       }
    }
 }

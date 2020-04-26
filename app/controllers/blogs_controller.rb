@@ -16,6 +16,10 @@ class BlogsController < ApplicationController
 	def update
 	end
 
+	def show
+		@blog = Blog.find(params[:id])
+	end
+
 	def delete
 	end
 	

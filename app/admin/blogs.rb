@@ -5,7 +5,7 @@ ActiveAdmin.register Blog do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :title, :description, :published, :published_at, :category, :sub_category
+  permit_params :title, :description, :published, :published_at, :category, :sub_category, :images
   #
   # or
   #

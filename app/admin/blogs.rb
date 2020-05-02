@@ -5,7 +5,7 @@ ActiveAdmin.register Blog do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :title, :description, :published, :published_at, :category, :sub_category, :images
+  permit_params :title, :description, :published, :published_at, :category, :sub_category#, :images
   #
   # or
   #
@@ -15,8 +15,8 @@ ActiveAdmin.register Blog do
   #   permitted
   # end
   
-  active_admin_import  validate: false,
-    csv_options: {col_sep: ";" },
-    before_import: ->(importer){ p '================= before import' },
-    batch_size: 1000
+  # active_admin_import  validate: false,
+  #   csv_options: {col_sep: ";" },
+  #   before_import: ->(importer){ p '================= before import' },
+  #   batch_size: 1000
 end

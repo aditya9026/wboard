@@ -2,11 +2,16 @@
 <div id="outer-box" >
   <section id="blogs"">
     <div class="container">
-      <div class="card-deck">
-          <div class="row">
-            <%=@blog.description %>
+      <div class="row">
+        <div class="card mb-3">
+          <img class="card-img-top" src="/images/blogs/sample11.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><%=@blog.title %></h5>
+            <p class="card-text"><%=@blog.description %></p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
-      </div>
+        </div>
+      </div> 
     </div>
-</section>
+  </section>
 </div>

@@ -76,7 +76,7 @@
       font-family: 'Open Sans', sans-serif;
       margin: 150px 10px 10px 10px;
       line-height: 88px;
-      font-size: 70px;
+      // font-size: 70px;
       letter-spacing: 6px;
       text-transform: uppercase;
       font-weight: 400;
@@ -129,19 +129,34 @@
 .text-center {
    text-align: center !important;
 }
+.title-font {
+   font-size: 3rem;
+   padding: 1.5rem;
+} 
 
 #outer-box {
-   margin: 120px;
+   margin-top: 60px;
+   margin-bottom: 60px;
+   // margin: 220px 50px;
+   .story-main-img {
+      height: 300px;
+   }
    .card-img-top {
       width:100%;
       height:200px;
       background-repeat:no-repeat;
       background-size:cover;
    }
+   a {
+      text-decoration: none !important;
+   }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+   .content-para-font {
+      font-size: 1.3rem;
+   }
    .jumbotron {
       h1.large-letter {
          margin: 150px 10px 10px 10px;
@@ -159,6 +174,9 @@
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+   .content-para-font {
+      font-size: 2.2rem;
+   }
    #banner {
       height: 50vh;
    }
@@ -181,6 +199,9 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+   .content-para-font {
+      font-size: 1.3rem;
+   }
    #banner {
       height: 70vh;
    }
@@ -199,6 +220,9 @@
  
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+   .content-para-font {
+      font-size: 1.3rem;
+   }
    #banner {
       height: 80vh;
    }
